@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>alfredprinter</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="components/BaseCommand.js"></script>
+    <script src="components/DeviceSpecs.js"></script>
+    <script src="components/SerialBoredParser.js"></script>
+    <script src="components/SerialTrigger.js"></script>
+    <script src="components/WifiUtilities.js"></script>
+    <script src="components/SerialCommand.js"></script>
+
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <select id="wifi-list" multiple="" class="form-control">
+        </select>
+        <button id="scan-wifi">refresh wifi</button>
+    </div>
+
+    <div class="row">
+        <select id="serial-list" multiple="" class="form-control">
+        </select>
+        <button id="scan-serial">refresh serial</button>
+    </div>
+
+</div>
+</body>
+</html>
